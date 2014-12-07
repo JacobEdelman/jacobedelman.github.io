@@ -7,7 +7,7 @@
 
 <div id="about">
 	<h1 id="welcome-">Hi!</h1>
-	<p>I'm a high school student who loves math, hacking, computer science (both practical and theoretical), and high school CS competitions.  I've tried to collect my interests and projects so that you can see them. I made my website a little differentely than most so you can click on the links below to see what I've done. If you want to bring something from this site into your browser just click the title of it's window. I used Ventus to make this site but I modified several parts of it to make it suit my needs.</p>
+	<p>I'm a high school student who loves math, hacking, computer science (both practical and theoretical), and high school CS competitions.  I've tried to collect my interests and projects so that you can see them. I made my website a little differentely than most so you can click on the buttons below to see what I've done. If you want to bring something from this site into your browser just click the title of it's window. I used Ventus to make this site but I modified several parts of it to make it suit my needs.</p>
 <br>
 <h2 onclick="makeHSCSio()" class="link-btn">HSCS.io</h2>
 <p>I am the president and a founder of HSCS.io, an organization to promote high school computer science. HSCS.io works with high school students to bring multiple competitions to high schools across the world. I created it after running HSCTF, a high school programming competition that had over 2000+ students participate and was sponsored by Facebook and others.</p>
@@ -16,69 +16,11 @@
 <p>I'm JacobEdelman on Github done a lot of programming projects and you can see a large amount of them on my github account, including this one!</p>
 <br>
 <h2 onclick="makePublicKey()" class="link-btn">Public Key</h2>
-<p>I'm jac on Keybase.io where I have verified several items, including this website using <a onclick="makeSiteVerify()">jacobedelman.com/keybase.txt</a>.
+<p>I'm jac on Keybase.io where I have verified several items, including this website using <a href="#" onclick="makeSiteVerify()">jacobedelman.com/keybase.txt</a>.
 <h2 class="link-btn" href="mailto:me@jacobedelman.com">Contact</h2>
 <!-- will this work? -->
 <p>My email is <a href="mailto:me@jacobedelman.com">me@jacobedelman.com</a>.</p>
 </div>
-<script type="text/javascript">
-function makeHSCSio(){
-	var newWindow=wm.createIframeWindow({
-		title: "HSCS.io",
-		url: "http://HSCS.io",
-		width: 530,
-		height: 450,
-		x: 550,
-		y: 110
-	});
-	newWindow.open();
-}
-function makeGithubVisual(){
-	var newWindow=wm.createIframeWindow({
-		title: "JacobEdelman - Github Visualizer",
-		url: "http://ghv.artzub.com/#user=JacobEdelman",
-		width: 920,
-		height: 450,
-		x: 500,
-		y: 90
-	});
-	newWindow.open();
-}
-function makePublicKey(){
-	var newWindow=wm.createIframeWindow({
-		title: "Public Key jac at Keybase.io",
-		url: "key.asc",
-		width: 500,
-		height: 500,
-		x: 600,
-		y: 120
-	});
-	newWindow.open();
-}
-function makeSiteVerify(){
-	var newWindow=wm.createIframeWindow({
-		title: "keybase.txt",
-		url: "keybase.txt",
-		width: 500,
-		height: 500,
-		x: 650,
-		y: 130
-	});
-	newWindow.open();
-}
 
-var wm;
-$(document).ready(function() {
-	wm = new Ventus.WindowManager();
-	var test=wm.createWindow.fromQuery('#about', {
-	    title: 'About Jacob',
-			url: "",
-	    width: 550,
-	    height: 600,
-	    x: 520,
-	    y: 30
-	});//style="width: 367px; height: 470px; left: 695px; top: 42px; z-index: 10003;
-	test.open();
-});
-</script>
+<script type="text/javascript" src="index.js"></script>
 </body>
