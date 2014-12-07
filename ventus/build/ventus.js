@@ -1699,11 +1699,14 @@ define('ventus/wm/windowmanager',['require','$','ventus/wm/window','ventus/core/
 		return this.createWindow(options);
 	};
   WindowManager.prototype.createIframeWindow=function(options){
+    //ahh... problems with multiple times
+
     var newWindow=this.createWindow.fromQuery("#iframeWindow"+btoa(options.name),options);
     var newIframe = document.createElement('iframe');
     newIframe.setAttribute('src',options.url);
     newIframe.setAttribute('style','height: 99%;width:100%');//this makes scrolling nice
     newWindow.$content[0].appendChild(newIframe);
+    console.log("here");
     return newWindow;
   }
 
