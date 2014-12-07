@@ -15,7 +15,8 @@
 
 
 body {
-  	background: url(background-spinning-green-dye.jpg) no-repeat center center;
+  	/*background: url(background-spinning-green-dye.jpg) no-repeat center center;*/
+    background-color:#712ecc;
 /* Background from: https://www.flickr.com/photos/gurusno-studios/4480067368/in/set-72157623330414161
  * It has been modified by simply using the despeckle filter in the GIMP Image Editor.
  * This is not sufficient to make it a new copyrightable work and thus it is not a derivitive of the original photo)
