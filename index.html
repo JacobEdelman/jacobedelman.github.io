@@ -15,8 +15,8 @@
 <h2 onclick="makeGithubVisual()" class="link-btn">Github</h2>
 <p>I'm JacobEdelman on Github done a lot of programming projects and you can see a large amount of them on my github account, including this one!</p>
 <br>
-<h2 onclick="makeKeybase()" class="link-btn">Public Key</h2>
-<p>I've verified several items on my Keybase account including this website using <a onclick="makeSiteVerify()">jacobedelman.com/keybase.txt</a>.
+<h2 onclick="makePublicKey()" class="link-btn">Public Key</h2>
+<p>I'm jac on Keybase.io where I have verified several items, including this website using <a onclick="makeSiteVerify()">jacobedelman.com/keybase.txt</a>.
 <h2 class="link-btn" href="mailto:me@jacobedelman.com">Contact</h2>
 <!-- will this work? -->
 <p>My email is <a href="mailto:me@jacobedelman.com">me@jacobedelman.com</a>.</p>
@@ -44,10 +44,10 @@ function makeGithubVisual(){
 	});
 	newWindow.open();
 }
-function makeKeybase(){
+function makePublicKey(){
 	var newWindow=wm.createIframeWindow({
-		title: "Jacob Edelman (jac) | Keybase",
-		url: "https://keybase.io/jac",
+		title: "Public Key jac at Keybase.io",
+		url: "key.asc",
 		width: 500,
 		height: 500,
 		x: 600,
