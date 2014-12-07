@@ -1706,7 +1706,6 @@ define('ventus/wm/windowmanager',['require','$','ventus/wm/window','ventus/core/
     newIframe.setAttribute('src',options.url);
     newIframe.setAttribute('style','height: 99%;width:100%');//this makes scrolling nice
     newWindow.$content[0].appendChild(newIframe);
-    console.log("here");
     return newWindow;
   }
 

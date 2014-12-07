@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/jac
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jacobedelman.com
+  * I am jac (https://keybase.io/jac) on keybase.
+  * I have a public key with fingerprint 6320 19B4 1DC4 B9D9 4B5C  BA31 41D2 0346 267F E3E2
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "632019b41dc4b9d94b5cba3141d20346267fe3e2",
+            "host": "keybase.io",
+            "key_id": "41d20346267fe3e2",
+            "uid": "c3cc12b08e17a4e6c08d04eec1acbe00",
+            "username": "jac"
+        },
+        "service": {
+            "hostname": "jacobedelman.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1417987469,
+    "expire_in": 157680000,
+    "prev": "fc9c1a88828fb94e1fff89ec8d232307320e89bfaed616915a33bd21ec31beec",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.6
+Comment: https://keybase.io/crypto
+
+yMHnAnicbVFbSBRRGF7LEo1MsiBWrRgKI0Rn5szOzuyDWojZBcLLixYsc86cWSfX
+md3Z2VUTLVGhC5mXtDBDIgNDJRNMgwTzQg+RphIFqdnFiCi6EEQZ2Rkpeum8HM73
+f9/3/9/5x9avtkWFBfoGNqmlE/VhD4Y/B215NePnyimoy2WUq5wqwiuXomoebPgM
+VTMpF8UDlmZEyDEy4qAoixx0ICgBhgAsDTie5Z0KBpilkqhCPWApiA2UAjhZ1QlG
+Hm5VJuh/+MGVAgIIMSykBcw4JQ7ziBZkmsMYMRKCmKYtYgAbmlSMCfuYhKiKJIoA
+IRVha1yr67+iDrGMvcWSloz0YiL1GbqpI91LqoWm6XNZYrPMZ7FLMHT/8XFDVZNJ
+bCIIYSOg6hrlYggTmaplTMI6RcHJ8WIShUt9qoHdqsVwOHmBJsdqg0PEUkEiGVsQ
+BFZQoMhhRlEUQcRIkFnAAtpJ/hILIlQkLPMMLzIOCQAoswxGgIEkMmUl82s68QZk
+TslDPAOqR5PMoIGpipHho+G2sCjb2jWrrM3ZoiJj/u7zZHTEso8d1L74qU/gx/LM
++bgdWw50t0/s69z/9FVHT3pCS9vHyTvRdVcHXti7j2yN57Pv9TWn/syS5mKfx6jL
+aWXThRH9bxILxJuZ3oyuUzvrZgPbBt+l3H5cdb3yTGut0GsP2UHnkFG1d/54fP94
+gXc0N/LK7t51C9Ktse81v/pGhqb4kqUET85BvtIXV7s0Wa03ZLXkTsY2zt/42lxd
+XzR7cW50V3Zw5lpE6mjlFO5qGs9PObFnQ0Pw7hioSLeXbuxNTMAZPQ+TQebLQ5tT
+qi+/t7ffv+AHzxYOh7ed7nLkfzCb5IFCqXVxe1rOyOtvHQt56vTZudRHT7r9iy3T
+by81Gr8BZ/EagA==
+=LQMp
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jac
+
+==================================================================
