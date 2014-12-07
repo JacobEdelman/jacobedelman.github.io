@@ -3,11 +3,11 @@
 <script type="text/javascript" src="ventus/vendor/handlebars.js"></script>
 <script src='ventus/build/ventus.js' ></script>
 <div id="about"><p>
-# Welcome!
-Hello! I'm a high school students who loves math, hacking, computer science (both practical and theoretical), and high school CS competitions.  I've tried to collect my interests and projects so that you can see them. I made my website a little differentely than most so you can click on the links below to see what I've done. If you want to bring something from this site into your browser just click the title of it's window.
-
-## HSCS.io
-I am the president and a founder of <span onclick="makehscsio()">HSCS.io</span>, an organization to promote high school computer science. <span onclick="makehscsio()">HSCS.io</span> works with high school students to bring multiple competitions to high schools across the world. I created it after running <span onclick="makehscsio()">HSCS.io</span>
+<h1 id="welcome-">Welcome!</h1>
+<p>Hello! I&#39;m a high school students who loves math, hacking, computer science (both practical and theoretical), and high school CS competitions.  I've tried to collect my interests and projects so that you can see them. I made my website a little differentely than most so you can click on the links below to see what I've done. If you want to bring something from this site into your browser just click the title of it's window.</p>
+<br>
+<h2 id="hscs-io"><a href="#"  onclick="makehscsio()">HSCS.io</a></h2>
+I am the president and a founder of <a href="#"  onclick="makehscsio()">HSCS.io</a>, an organization to promote high school computer science. <a href="#"  onclick="makehscsio()">HSCS.io</a>  works with high school students to bring multiple competitions to high schools across the world. I created it after running <a href="#"  onclick="makehscsio()">HSCS.io</a>
 </p></div>
 <!-- <iframe id="hscsio" src="http://hscs.io"/> -->
 <script type="text/javascript">
@@ -15,14 +15,15 @@ function makehscsio(){
 	var hscsioWindow=wm.createWindow.fromQuery('#hscsio', {
 			title: 'HSCS.io',
 			url: "http://hscs.io",
-			width: 330,
-			height: 400,
-			x: 670,
-			y: 60
+			width: 530,
+			height: 450,
+			x: 650,
+			y: 160
 	});
 	var hscsioiframe = document.createElement('iframe');
 
   hscsioiframe.setAttribute('src','http://hscs.io');
+	hscsioiframe.setAttribute('style','height: 99%;width:100%');
 	console.log(hscsioWindow.$content[0].appendChild);
 	hscsioWindow.$content[0].appendChild(hscsioiframe);
 
@@ -34,20 +35,11 @@ $(document).ready(function() {
 	var test=wm.createWindow.fromQuery('#about', {
 	    title: 'About Jacob',
 			url: "",
-	    width: 330,
-	    height: 400,
-	    x: 670,
+	    width: 500,
+	    height: 470,
+	    x: 620,
 	    y: 60
 	});//style="width: 367px; height: 470px; left: 695px; top: 42px; z-index: 10003;
 	test.open();
-	var win = wm.createWindow({
-	  title: 'A newer window',
-	  x: 50,
-	  y: 50,
-	  width: 400,
-	  height: 250
-	});
-
-	win.open();
 });
 </script>
