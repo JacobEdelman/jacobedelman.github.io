@@ -1704,7 +1704,7 @@ define('ventus/wm/windowmanager',['require','$','ventus/wm/window','ventus/core/
     var newWindow=this.createWindow.fromQuery("#iframeWindow",options);
     var newIframe = document.createElement('iframe');
     newIframe.setAttribute('src',options.url);
-    newIframe.setAttribute('style','height: 99%;width:100%');//this makes scrolling nice
+    newIframe.setAttribute('seamless','seamless');
     newWindow.$content[0].appendChild(newIframe);
     return newWindow;
   }
