@@ -363,6 +363,7 @@ mark {
 	box-shadow: 0px 1px 0px 0px #000943;
 }
 iframe[my-seamless]{
+  seamless:seamless;
   border: 0;
   overflow: hidden;
   height: 100%;
