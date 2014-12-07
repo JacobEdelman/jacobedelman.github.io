@@ -13,8 +13,10 @@
 <p>I am the president and a founder of HSCS.io, an organization to promote high school computer science. HSCS.io works with high school students to bring multiple competitions to high schools across the world. I created it after running HSCTF, a high school programming competition that had over 2000+ students participate and was sponsored by Facebook and others.</p>
 <br>
 <h2 onclick="makeGithubVisual()" class="link-btn">Github</h2>
-<p>I've done a lot of programming projects and you can see a large amount of them on my github account, including this one! I'm using a GIthub visualizer since it's cool and Github prevents me from putting my profile in an iframe.</p>
+<p>I'm JacobEdelman on Github done a lot of programming projects and you can see a large amount of them on my github account, including this one!</p>
 <br>
+<h2 onclick="makeKeybase()" class="link-btn">Public Key</h2>
+<p>I've verified several items on my Keybase account including this website using <a onclick="makeSiteVerify()">jacobedelman.com/keybase.txt</a>.
 <h2 class="link-btn" href="mailto:me@jacobedelman.com">Contact</h2>
 <!-- will this work? -->
 <p>My email is <a href="mailto:me@jacobedelman.com">me@jacobedelman.com</a>.</p>
@@ -26,7 +28,7 @@ function makeHSCSio(){
 		url: "http://HSCS.io",
 		width: 530,
 		height: 450,
-		x: 650,
+		x: 550,
 		y: 110
 	});
 	newWindow.open();
@@ -37,11 +39,34 @@ function makeGithubVisual(){
 		url: "http://ghv.artzub.com/#user=JacobEdelman",
 		width: 920,
 		height: 450,
-		x: 600,
+		x: 500,
 		y: 90
 	});
 	newWindow.open();
 }
+function makeKeybase(){
+	var newWindow=wm.createIframeWindow({
+		title: "Jacob Edelman (jac) | Keybase",
+		url: "https://keybase.io/jac",
+		width: 500,
+		height: 500,
+		x: 600,
+		y: 120
+	});
+	newWindow.open();
+}
+function makeSiteVerify(){
+	var newWindow=wm.createIframeWindow({
+		title: "keybase.txt",
+		url: "keybase.txt",
+		width: 500,
+		height: 500,
+		x: 650,
+		y: 130
+	});
+	newWindow.open();
+}
+
 var wm;
 $(document).ready(function() {
 	wm = new Ventus.WindowManager();
@@ -49,7 +74,7 @@ $(document).ready(function() {
 	    title: 'About Jacob',
 			url: "",
 	    width: 550,
-	    height: 670,
+	    height: 600,
 	    x: 520,
 	    y: 30
 	});//style="width: 367px; height: 470px; left: 695px; top: 42px; z-index: 10003;

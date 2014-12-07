@@ -1701,7 +1701,7 @@ define('ventus/wm/windowmanager',['require','$','ventus/wm/window','ventus/core/
   WindowManager.prototype.createIframeWindow=function(options){
     //ahh... problems with multiple times
 
-    var newWindow=this.createWindow.fromQuery("#iframeWindow"+btoa(options.name),options);
+    var newWindow=this.createWindow.fromQuery("#iframeWindow",options);
     var newIframe = document.createElement('iframe');
     newIframe.setAttribute('src',options.url);
     newIframe.setAttribute('style','height: 99%;width:100%');//this makes scrolling nice
