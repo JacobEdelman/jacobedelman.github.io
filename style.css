@@ -8,13 +8,26 @@
  * Authors: @brunodecarvalho, @jpedroso, @rcabaco
  * Copyright 2011 Metaclassy, Lda. <http://metaclassy.com>
  */
+/*
+ * This has been modified by Jacob Edelman.
+ * and css from other sources (noted where appropriate) has been used.
+ */
 
 
-html{
-  background-color: #f2f2f2;
+body {
+  	background: url(background-spinning-green-dye.jpg) no-repeat center center;
+/* Background from: https://www.flickr.com/photos/gurusno-studios/4480067368/in/set-72157623330414161
+ * It has been modified by simply using the despeckle filter in the GIMP Image Editor.
+ * This is not sufficient to make it a new copyrightable work and thus it is not a derivitive of the original photo)
+ */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
 }
 #about {
-    /*background-color: #f2f2f2;*/
+    background-color: #f2f2f2;
     color: #3c3c3c;
 
     /* Change font size below */
@@ -50,8 +63,10 @@ a:hover {
 /* headings */
 h1, h2 {
     line-height:1.2em;
-    margin-top:32px;
+    padding-top:10px;
+    margin-top:10px;
     margin-bottom:12px;
+    margin-left :10px;
 }
 h1:first-child {
     margin-top:0;
@@ -66,10 +81,11 @@ h5, h6 {
 }
 /* end of headings */
 p {
-    margin:0 0 24px 0;
+
+    margin:0 10px 24px 30px;
 }
 p:last-child {
-    margin:0;
+    margin-bottom:0;
 }
 #wrapper hr {
     width: 100%;
@@ -309,4 +325,55 @@ mark {
     .footnotes {
         page-break-before: always;
     }
+}
+.link-btn {
+	padding: 14px 10px;
+	line-height: 100%;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	display:inline-block;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background 0.1s ease-in-out;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-ms-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.link-btn:active {
+	padding-top: 15px;
+        margin-bottom: -1px;
+}
+.link-btn, .link-btn:hover, .link-btn:active {
+	outline: 0 none;
+	text-decoration: none;
+	color: #fff;
+}
+
+.link-btn {
+	background-color: #2ecc71;
+	box-shadow: 0px 3px 0px 0px #009943;
+}
+.link-btn:hover {
+
+	background-color: #0ac25a;
+}
+.link-btn:active {
+	box-shadow: 0px 1px 0px 0px #000943;
+}
+
+a {
+  color:#2ecc71;
+}
+a:hover{
+  color: #0ac25a;
+}
+a:visited{
+  color:#007232;
 }

@@ -1,8 +1,13 @@
+/*
+This software has been modified by Jacob Edelman.
+*/
 /**
  * Ventus
  * Copyright © 2012 Ramón Lamana
  * https://github.com/rlamana
  */
+
+/*Note: Ventus, which is used on this site, can be found at https://github.com/rlamana and was made by Ramón Lamana. It's license can be found at: https://raw.githubusercontent.com/rlamana/Ventus/master/LICENSE . Jacob Edelman has also modified parts of it. */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) { // AMD.
         define(['$', 'handlebars'], factory);
@@ -852,11 +857,10 @@ function(Emitter, View, WindowTemplate) {
 				},
 
 				'.wm-window-title dblclick': function() {
-          if(this.url){
+          if(this.url)
             window.open(this.url);
-          }
-					// if(this.enabled && this.resizable)
-					// 	this.maximize();
+					else if(this.enabled && this.resizable)
+					 	this.maximize();
 				},
 
 				'.wm-window-title button.wm-close click': function(e) {
@@ -1539,6 +1543,7 @@ define('ventus/wm/windowmanager',['require','$','ventus/wm/window','ventus/core/
 		this.mode = 'default';
 
 		// Binding sub-functions to this object
+    this.createIframeWindow=this.createIframeWindow.bind(this);
 		this.createWindow.fromQuery = this.createWindow.fromQuery.bind(this);
 		this.createWindow.fromElement = this.createWindow.fromElement.bind(this);
 	};
@@ -1693,6 +1698,14 @@ define('ventus/wm/windowmanager',['require','$','ventus/wm/window','ventus/core/
 		options.content = view(element);
 		return this.createWindow(options);
 	};
+  WindowManager.prototype.createIframeWindow=function(options){
+    var newWindow=this.createWindow.fromQuery("#iframeWindow"+btoa(options.name),options);
+    var newIframe = document.createElement('iframe');
+    newIframe.setAttribute('src',options.url);
+    newIframe.setAttribute('style','height: 99%;width:100%');//this makes scrolling nice
+    newWindow.$content[0].appendChild(newIframe);
+    return newWindow;
+  }
 
 	return WindowManager;
 });

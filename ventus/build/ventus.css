@@ -1,3 +1,9 @@
+/**
+ * Ventus
+ * Copyright © 2012 Ramón Lamana
+ * https://github.com/rlamana
+ */
+ /*Note: Ventus, which is used on this site, can be found at https://github.com/rlamana and was made by Ramón Lamana. It's license can be found at: https://raw.githubusercontent.com/rlamana/Ventus/master/LICENSE . Jacob Edelman has also modified parts of it. */
 .wm-space.expose .wm-window:hover {
   -webkit-box-shadow: 0px 0px 40px #000088;
   -moz-box-shadow: 0px 0px 40px #000088;
@@ -361,7 +367,7 @@
   padding: 0 8px;
   height: 36px;
   min-height: 36px;
-  background-color: #365d98;
+  background-color: #2ecc71;
   border: 0;
   overflow: hidden;
   /*button.wm-close {
