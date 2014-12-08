@@ -1706,6 +1706,7 @@ define('ventus/wm/windowmanager',['require','$','ventus/wm/window','ventus/core/
     var newIframe = document.createElement('iframe');
     newIframe.setAttribute('src',options.url);
     newIframe.setAttribute('my-seamless','true');
+    newIframe.setAttribute('height',options.height-36);
     //seamless exists in chrome but not in firefox (and not in IE I think) so I'll just use this custom my-seamless I built in style.css
     newWindow.$content[0].appendChild(newIframe);
     return newWindow;
