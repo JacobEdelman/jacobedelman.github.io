@@ -53,7 +53,7 @@ body {
   font-family: "Courier New", Menlo, Monaco, mono;
   -webkit-font-smoothing: antialiased;
   */
-
+  height:100%;
 }
 /* headings */
 h1, h2 {
@@ -366,6 +366,7 @@ iframe[my-seamless]{
   border: 0;
   overflow: hidden;
   width: 100%;
+  display:block;
 }
 
 a {

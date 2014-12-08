@@ -1701,12 +1701,15 @@ define('ventus/wm/windowmanager',['require','$','ventus/wm/window','ventus/core/
   //The createIframeWindow was added by Jacob Edelman
   WindowManager.prototype.createIframeWindow=function(options){
     //ahh... problems with multiple times
-
+    //options.height=(100*(options.height-36.0)/options.height)/100*(options.height+36)-0.12;
+    console.log(options.height);
     var newWindow=this.createWindow.fromQuery("#iframeWindow",options);
     var newIframe = document.createElement('iframe');
     newIframe.setAttribute('src',options.url);
     newIframe.setAttribute('my-seamless','true');
-    newIframe.setAttribute('height',options.height-36);
+    //this is really haxy
+    newIframe.setAttribute('height',"100%");
+    //newIframe.setAttribute('height',"inherit");//100*(options.height-36)/options.height
     //seamless exists in chrome but not in firefox (and not in IE I think) so I'll just use this custom my-seamless I built in style.css
     newWindow.$content[0].appendChild(newIframe);
     return newWindow;
