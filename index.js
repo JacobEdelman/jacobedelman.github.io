@@ -2,8 +2,8 @@ function makeHSCSio(){
   var newWindow=wm.createIframeWindow({
     title: "HSCS.io",
     url: "http://HSCS.io",
-    width: 530,
-    height: 450,
+    width: 850,
+    height: 500,
     x: 550,
     y: 110
   });
