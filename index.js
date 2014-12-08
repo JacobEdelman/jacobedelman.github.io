@@ -15,8 +15,8 @@ function makeGithubVisual(){
     url: "http://ghv.artzub.com/#user=JacobEdelman",
     width: 920,
     height: 450,
-    x: 500,
-    y: 90
+    x: 200,
+    y: 80
   });
   newWindow.open();
 }
