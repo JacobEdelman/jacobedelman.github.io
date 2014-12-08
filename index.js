@@ -4,7 +4,7 @@ function makeHSCSio(){
     url: "http://HSCS.io",
     width: 850,
     height: 500,
-    x: 550,
+    x: 250,
     y: 110
   });
   newWindow.open();
