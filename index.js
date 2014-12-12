@@ -8,6 +8,9 @@ function makeHSCSio(){
     y: 110
   });
   newWindow.open();
+  if(window.is_mobile){
+        newWindow.maximize();
+  }
 }
 function makeGithubVisual(){
   var newWindow=wm.createIframeWindow({
@@ -19,6 +22,9 @@ function makeGithubVisual(){
     y: 80
   });
   newWindow.open();
+    if(window.is_mobile){
+        newWindow.maximize();
+    }
 }
 function makePublicKey(){
   var newWindow=wm.createIframeWindow({
@@ -30,6 +36,9 @@ function makePublicKey(){
     y: 120
   });
   newWindow.open();
+    if(window.is_mobile){
+        newWindow.maximize();
+    }
 }
 function makeSiteVerify(){
   var newWindow=wm.createIframeWindow({
@@ -41,12 +50,15 @@ function makeSiteVerify(){
     y: 130
   });
   newWindow.open();
+    if(window.is_mobile){
+        newWindow.maximize();
+    }
 }
 
 var wm;
 $(document).ready(function() {
   wm = new Ventus.WindowManager();
-  var test=wm.createWindow.fromQuery('#about', {
+  var about=wm.createWindow.fromQuery('#about', {
       title: 'About Jacob',
       url: "",
       width: 550,
@@ -54,5 +66,9 @@ $(document).ready(function() {
       x: 520,
       y: 30
   });//style="width: 367px; height: 470px; left: 695px; top: 42px; z-index: 10003;
-  test.open();
+  about.open();
+    if(window.is_mobile){
+        newWindow.maximize();
+    }
+    
 });
