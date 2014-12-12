@@ -68,7 +68,7 @@ $(document).ready(function() {
   });//style="width: 367px; height: 470px; left: 695px; top: 42px; z-index: 10003;
   about.open();
     if(window.is_mobile){
-        newWindow.maximize();
+        about.maximize();
     }
     
 });
