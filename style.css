@@ -13,7 +13,9 @@
  * and css from other sources (noted where appropriate) has been used.
  */
 
-
+html {
+  overflow: hidden;
+}
 body {
   	background: url(background-spinning-green-dye.jpg) no-repeat center center;
     /*background-color:#712ecc;*/
