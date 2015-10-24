@@ -1,3 +1,18 @@
+function makeHSCTF(){
+  var newWindow=wm.createIframeWindow({
+    title: "HSCTF",
+    url: "http://hsctf.com",
+    width: 850,
+    height: 500,
+    x: 230,
+    y: 100
+  });
+  newWindow.open();
+  if(window.is_mobile){
+        newWindow.maximize();
+  }
+}
+
 function makeHSCSio(){
   var newWindow=wm.createIframeWindow({
     title: "HSCS.io",
